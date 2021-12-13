@@ -8,5 +8,21 @@
 </head>
 <body>
     <h1>Students With A+</h1> 
+    <div class="center-text">
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th>First Name</th><th>Last Name</th><th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for a_students in student %}
+                <tr>
+                    <td>{{a_students.first_name}}</td><td>{{a_students.last_name}}</td><td>{{a_student.grade}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
