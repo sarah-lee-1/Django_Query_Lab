@@ -88,18 +88,18 @@ def problem_six(request):
 
 # Create a view function and template for each bonus problem you complete
 
-BONUS ONE
-Write a query to find any instructors who are only teaching one single course. 
-Display the instructor and the course
+# BONUS ONE
+# Write a query to find any instructors who are only teaching one single course. 
+# Display the instructor and the course
 
-def BONUS ONE(request):
-    #instructor_one = Instructor.objects.filter('').order_by('')
-    course_one = Course.objects.alias(courses=Count('entry')).filter(courses__gt=1)
-    instructors_one = course_one.filter('instructor_id') 
-    context = {
-        'instructors': instructors_one
-    }
-    return render(request, 'school/two.html', context)
+# def BONUS ONE(request):
+#     #instructor_one = Instructor.objects.filter('').order_by('')
+#     course_one = Course.objects.alias(courses=Count('entry')).filter(courses__gt=1)
+#     instructors_one = course_one.filter('instructor_id') 
+#     context = {
+#         'instructors': instructors_one
+#     }
+#     return render(request, 'school/two.html', context)
 
 # BONUS TWO
 # Display all students along with the number of credits they are taking
