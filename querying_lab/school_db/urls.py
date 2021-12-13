@@ -11,5 +11,4 @@ urlpatterns = [
     path('four/', views.problem_four, name="four"),
     path('five/', views.problem_five, name="five"),
     path('six/', views.problem_six, name="six"),
-    path('bonus_one/', views.problem_bonus_one, name="bonus_one"),
 ]
