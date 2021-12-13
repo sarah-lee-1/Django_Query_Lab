@@ -8,5 +8,21 @@
 </head>
 <body>
     <h1>Students with GPA Over 3.0</h1>
+    <div class="center-text">
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th>First Name</th><th>Last Name</th><th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for high_gpa in students %}
+                <tr>
+                    <td>{{high_gpa.first_name}}</td><td>{{high_gpa.last_name}}</td><td>{{high_gpa.gpa}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
