@@ -18,9 +18,9 @@
                 </tr>
             </thead>
             <tbody>
-                {% for programming_grades in studentcourse %}
+                {% for item in student_courses %}
                 <tr>
-                    <td>{{programming_grades.first_name}}</td><td>{{programming_grades.last_name}}</td><td>{{programming_grades.grade}}</td>
+                    <td>{{item.student.first_name}}</td><td>{{item.student.last_name}}</td><td>{{item.grade}}</td>
                 </tr>
                 {% endfor %}
             </tbody>
