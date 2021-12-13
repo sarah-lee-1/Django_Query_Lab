@@ -8,5 +8,21 @@
 </head>
 <body>
     <h1>Instructors Hired Before 2010</h1>
+    <div class="center-text">
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th>First Name</th><th>Last Name</th><th>Hire Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for hire_date in instructors %}
+                <tr>
+                    <td>{{hire_date.first_name}}</td><td>{{hire_date.last_name}}</td><td>{{hire_date.hire_date}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
