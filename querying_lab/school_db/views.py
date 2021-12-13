@@ -19,7 +19,7 @@ def index(request):
 def problem_one(request):
     # Find all students who have a GPA greater than 3.0. 
     # Order the data by highest GPAs first.
-    high_gpa = Student.objects.filter(gpa__gte=3.0).order_by('-gpa')
+    high_gpa = Student.objects.filter(gpa__gt=3.0).order_by('-gpa')
 
     context = {
         'students': high_gpa
@@ -39,6 +39,7 @@ def problem_two(request):
 def problem_three(request):
     # Find all students who have a A+ in any class and are NOT getting a C+ in any class. 
     # Order the data by student's first name alphabetically.
+    
 
     context = {
         'student_courses': None
