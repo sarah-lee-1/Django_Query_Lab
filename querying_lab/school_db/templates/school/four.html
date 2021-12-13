@@ -7,6 +7,23 @@
     <title>Problem Four</title>
 </head>
 <body>
-    <h1>Programming Students</h1>
+    <h1>Programming Grades</h1>
+    <div class="center-text">
+        <table class="center-table">
+            <thead>
+                <tr>
+                    <th>First Name</th><th>Last Name</th><th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for programming_grades in studentcourse %}
+                <tr>
+                    <td>{{programming_grades.first_name}}</td><td>{{programming_grades.last_name}}</td><td>{{programming_grades.grade}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
 </body>
 </html>
