@@ -29,9 +29,10 @@ def problem_one(request):
 def problem_two(request):
     # Find all instructors hired prior to 2010
     # Order by hire date
+    hire_date = Instructor.objects.filter(hire_date__lt='2010-01-01').order_by('hire_date')
 
     context = {
-        'instructors': None
+        'instructors': hire_date
     }
     return render(request, 'school/two.html', context)
 
